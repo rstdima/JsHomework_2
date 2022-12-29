@@ -45,7 +45,7 @@ if (test === true) {
 -->
    <script>
       //task_1
-      
+
       let num1 = +prompt('Введите первую переменную');
       let num2 = +prompt('Введите вторую переменную');
 
@@ -54,6 +54,18 @@ if (test === true) {
       } else {
          console.log('Условие не выполненно');
       }
+
+      let test = true;
+      if (test === true) {
+         console.log('+++');
+      } else {
+         console.log('---');
+      }
+      //первый вариант
+      test === true ? console.log('+++') : console.log('---');
+
+      //второй вариант
+      console.log(test === true ? '+++' : '---');
    </script>
 </body>
 </html>
