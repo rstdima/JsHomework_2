@@ -43,43 +43,58 @@ if (test === true) {
 
 Уточнение: пользователь всегда вводит корректное положительное целое число.
 -->
-   <script>
+<script>
       //task_1
-      let num1 = +prompt('Введите первую переменную');
-      let num2 = +prompt('Введите вторую переменную');
+let num1 = +prompt('Введите первую переменную');
+let num2 = +prompt('Введите вторую переменную');
 
-      if (num1 <= 1 && num2 >= 3) {
-         console.log('Условие задачи выполняеться');
-      } else {
-         console.log('Условие не выполненно');
-      }
+if (num1 <= 1 && num2 >= 3) {
+   console.log('Условие задачи выполняеться');
+} else {
+   console.log('Условие не выполненно');
+}
       //task_2
-      let test = true;
-      if (test === true) {
-         console.log('+++');
-      } else {
-         console.log('---');
-      }
+let test = true;
+if (test === true) {
+   console.log('+++');
+} else {
+   console.log('---');
+}
       //первый вариант
-      test === true ? console.log('+++') : console.log('---');
+test === true ? console.log('+++') : console.log('---');
 
       //второй вариант
-      console.log(test === true ? '+++' : '---');
+console.log(test === true ? '+++' : '---');
 
          //task_3
-      let day = +prompt('Введите число от 1 до 31');
+let day = +prompt('Введите число от 1 до 31');
       
-      if (day >= 1 && day <= 10) {
-         console.log(`Первая декада ${day}`);
-      }
-      if (day >= 11 && day <= 20){
-         console.log(`Вторая декада ${day}`);
-      }
-      if (day >= 21 && day <= 31){
-      console.log(`Третья декада ${day}`);
-      } else {
-         console.log(`Ваше чило не лежит в интервале от 1 до 31 и не входит ни в одну декаду пожалуйста измените значение ${day}!`);
-      }
+if (day >= 1 && day <= 10) {
+   console.log(`Первая декада ${day}`);
+}
+if (day >= 11 && day <= 20){
+   console.log(`Вторая декада ${day}`);
+}
+if (day >= 21 && day <= 31){
+console.log(`Третья декада ${day}`);
+} else {
+   console.log(`Ваше чило не лежит в интервале от 1 до 31 и не входит ни в одну декаду пожалуйста измените значение ${day}!`);
+}
+
+      //task_4
+let number = +prompt('Введите число');
+
+let hundred = Math.trunc(number % 1000 / 100);
+let dozens = Math.trunc(number % 100 / 10);
+let units = Math.trunc(number % 10);
+
+if (number >= 0) {
+   console.log(`В числе ${number} количесвто сотен: ${hundred}, десятков: ${dozens}, единиц: ${units}`);
+} else {
+   console.log('Введите положительное число');
+}
+
+
    </script>
 </body>
 </html>
