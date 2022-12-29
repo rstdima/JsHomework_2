@@ -45,7 +45,6 @@ if (test === true) {
 -->
    <script>
       //task_1
-
       let num1 = +prompt('Введите первую переменную');
       let num2 = +prompt('Введите вторую переменную');
 
@@ -54,7 +53,7 @@ if (test === true) {
       } else {
          console.log('Условие не выполненно');
       }
-
+      //task_2
       let test = true;
       if (test === true) {
          console.log('+++');
@@ -66,6 +65,21 @@ if (test === true) {
 
       //второй вариант
       console.log(test === true ? '+++' : '---');
+
+         //task_3
+      let day = +prompt('Введите число от 1 до 31');
+      
+      if (day >= 1 && day <= 10) {
+         console.log(`Первая декада ${day}`);
+      }
+      if (day >= 11 && day <= 20){
+         console.log(`Вторая декада ${day}`);
+      }
+      if (day >= 21 && day <= 31){
+      console.log(`Третья декада ${day}`);
+      } else {
+         console.log(`Ваше чило не лежит в интервале от 1 до 31 и не входит ни в одну декаду пожалуйста измените значение ${day}!`);
+      }
    </script>
 </body>
 </html>
